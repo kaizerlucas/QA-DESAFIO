@@ -1,0 +1,60 @@
+Sendo um visitante da página BugerEats, 
+Quero me cadastrar, 
+Para me tornar um parceiro entregador.
+
+Cenario1: Visitando a home
+Dado que eu acesso ao site da plataforma
+Quando valido a opção de me cadastrar
+Então sou direcionado para a página de cadastro
+
+Cenário2: Desistindo do cadastro
+Dado que eu acesso ao site da plataforma
+Quando valido a opção de me cadastrar, sendo redirecionado para a página de cadastro
+E valido a opção de voltar para a página inical
+Então sou redirecionado para a Home
+
+Cenário3: Cadastro
+Dado que eu estou na página de cadastro
+Quando submeto meu cadastro com dados, endereço. Métodos de entrega
+E a documentação necessária, de forma válida
+Então recebo a mensagem que os dados foram recebidos com sucesso
+
+Cenário4: CPF inválido
+Dado que eu estou na página de cadastro
+Quando submeto meu cadastro
+E informo um cpf inválido
+Então devo receber a mensagem Opps! Cpf inválido
+
+Cenário5: E-mail inválido
+Dado que eu estou na página de cadastro
+Quando submeto meu cadastro
+E informo um e-mail inválido
+Então devo receber a mensagem para informar de uma forma válida
+
+Cenário6: Buscando um endereço 
+Dado que eu estou na página de cadastro
+Quando quero informar um cep válido
+Então devo ter os campos preenchidos de acordo com o cep
+
+Cenário7: Endereço inválido
+Dado que eu estou na página de cadastro
+Quando informo um cep incorreto
+Então devo receber a mensagem informe um cep válido
+
+Cenário8: Métodos de entrega
+Dado que eu estou na página de cadastro
+Quando preciso escolher um método de entrega
+Então devo ter minha escolha atendida
+
+Cenário9: Validando foto
+Dado que eu estou na página de cadastro
+Quando preciso incluir uma documentação
+Então deve abrir a janela do computador
+
+Cenário10: Nenhum campo preenchido
+Dado que eu estou na página de cadastro
+Quando não preencho as informações solicitadas
+Então devo receber a mensagem que é necessário informar cada uma delas
+
+
+
